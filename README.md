@@ -6,8 +6,9 @@ A simple python script to get my favorite crypto prices every 5 minutes and disp
 
 ### TODO:
 * Dynamic price formatting
-* Accept coins as parameter
+* Accept coins as parameter (maybe .yml)
 * Add validations and error treatment
+
 
 ## Required:
 * ```pip install win10toast```

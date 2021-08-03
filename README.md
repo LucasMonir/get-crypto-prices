@@ -10,5 +10,5 @@ A simple python script to get my favorite crypto prices every 5 minutes and disp
 • Add validations and error treatment 
 
 ## Required:
-• ```pip install win10toast```
+• ```pip install win10toast``` <br>
 • ```pip install python-binance```

@@ -23,7 +23,7 @@ try:
             prices += "\n"
 
         toast = ToastNotifier() 
-        toast.show_toast("Your prices:", prices)
+        toast.show_toast("Your prices:", prices, icon_path='get-crypto-prices\test.ico')
         
         del prices
         gc.collect()

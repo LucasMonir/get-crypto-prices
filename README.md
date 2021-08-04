@@ -5,9 +5,9 @@ A simple python script to get my favorite crypto prices every 5 minutes and disp
 <img src="https://github.com/LucasMonir/Arduino-personal-projects/blob/master/prices.png?raw=true"></img>
 
 ### TODO:
-* Dynamic price formatting
+*[ ] Dynamic price formatting
 * [x] Accept coins as parameter (maybe .json) 
-* Add validations and error treatment
+* [ ] Add validations and error treatment
 
 
 ## Required:

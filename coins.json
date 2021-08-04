@@ -3,5 +3,6 @@
     "Ethereum": "ETH",
     "Eos": "EOS",
     "Tezos": "XTZ",
-    "Cardano": "ADA"
+    "Cardano": "ADA",
+    "Link": "LINK"
 }

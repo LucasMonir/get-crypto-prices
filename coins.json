@@ -1,8 +1,15 @@
 {
-    "Bitcoin": "BTC",
-    "Ethereum": "ETH",
-    "Eos": "EOS",
-    "Tezos": "XTZ",
-    "Cardano": "ADA",
-    "Link": "LINK"
+    "coins1":{
+        "Bitcoin": "BTC",
+        "Ethereum": "ETH",
+        "Eos": "EOS",
+        "Tezos": "XTZ"
+    },
+    "coins2":{
+        "Cardano": "ADA",
+        "Link": "LINK",
+        "Doge": "DOGE"
+    }
 }
+
+

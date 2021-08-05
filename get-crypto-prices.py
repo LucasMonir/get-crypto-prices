@@ -20,13 +20,16 @@ try:
         prices = ''
         setlocale(LC_ALL, '')                
         
-        for coin in json:
-            prices += f'{coin}: ' + currency(float(client.get_symbol_ticker(symbol=f'{json[coin]}USDT')['price']))
-            prices += "\n"
+        for coingroup in json:
+            for coin in json[coingroup]:
+                symbol = json[coingroup][coin]
+                prices += f'{coin}: ' + currency(float(client.get_symbol_ticker(symbol=f'{symbol}USDT')['price']))
+                prices += "\n"
 
-        toast = ToastNotifier() 
-        toast.show_toast("Your prices:", prices, icon_path='get-crypto-prices\test.ico')
-        
+            toast = ToastNotifier() 
+            toast.show_toast("Your prices:", prices, icon_path='get-crypto-prices\\test.ico')
+            prices = ''
+          
         del prices
         collect()
 

@@ -18,7 +18,7 @@ try:
 
     for range in range(100):
         prices = ''
-        setlocale(LC_ALL, '')                
+        setlocale(LC_ALL, 'en_US')                
         
         for coingroup in json:
             for coin in json[coingroup]:

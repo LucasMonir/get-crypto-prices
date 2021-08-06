@@ -12,17 +12,17 @@ try:
     client = Client(api_key, api_secret)
     client.API_URL = 'https://api.binance.com/api'
 
-    with open("get-crypto-prices\\coins.json") as coins:
-        json = load(coins)
-        coins.close()
+    with open("get-crypto-prices\\coins.json") as json:
+        coins = load(json)
+        json.close()
 
     for index in range(100):
         prices = ''
         setlocale(LC_ALL, 'en_US')
 
-        for coingroup in json:
-            for coin in json[coingroup]:
-                symbol = json[coingroup][coin]
+        for coingroup in coins:
+            for coin in coins[coingroup]:
+                symbol = coins[coingroup][coin]
                 prices += f'{coin}: ' + currency(float(client.get_symbol_ticker(symbol=f'{symbol}USDT')['price']))
                 prices += "\n"
 

@@ -7,7 +7,7 @@ A simple python script to get my favorite crypto prices every 5 minutes and disp
 ### TODO:
 * [x] Add/Fix the toast icon
 * [x] Accept coins as parameter (maybe .json) 
-* [ ] Linux support
+* [x] Linux support
 * [ ] Dynamic price formatting
 * [ ] Add validations and error treatment
 * [ ] GUI to select which cryptos to get (replacing the .json)
@@ -15,9 +15,12 @@ A simple python script to get my favorite crypto prices every 5 minutes and disp
 
 ## Required:
 * ```pip install python-binance```
+* Get your API keys from the binance site
 
 ### Windows:
 * ```pip install win10toast```
 
 ### Ubuntu
 * ```pip install notify2```
+
+

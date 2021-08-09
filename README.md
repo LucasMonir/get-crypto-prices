@@ -10,6 +10,7 @@ A simple python script to get my favorite crypto prices every 5 minutes and disp
 * [x] Linux support
 * [ ] Dynamic price formatting
 * [ ] Add validations and error treatment
+* [ ] Create "Make" file to simplify installing/executing
 * [ ] GUI to select which cryptos to get (replacing the .json)
 
 

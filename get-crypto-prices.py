@@ -1,5 +1,4 @@
 from time import sleep
-from os import environ
 from binance import Client
 from json import load
 from gc import collect
@@ -7,37 +6,35 @@ from locale import setlocale, LC_ALL, currency
 from toasts import toast
 
 try:
-    api_key = environ.get("binance_api")
-    api_secret = environ.get("binance_secret")
-    client = Client(api_key, api_secret)
-    client.API_URL = "https://api.binance.com/api"
+    client = Client()
+    client.API_URL = 'https://api.binance.com/api'
 
     def chunks(L, n):
         return [L[x : x + n] for x in range(0, len(L), n)]
 
-    with open("get-crypto-prices\\coins.json") as json:
+    with open('get-crypto-prices\\coins.json') as json:
         coins = load(json)
         json.close()
         coins2 = chunks(coins, 4)
 
     for index in range(100):
-        prices = ""
-        setlocale(LC_ALL, "en_US")
+        prices = ''
+        setlocale(LC_ALL, 'en_US')
 
         for coingroup in coins2:
             for coins[0], coins[1] in coingroup:
                 symbol = coins[1]
-                prices += f"{coins[0]}: " + currency(
-                    float(client.get_symbol_ticker(symbol=f"{symbol}USDT")["price"])
+                prices += f'{coins[0]}: ' + currency(
+                    float(client.get_symbol_ticker(symbol=f'{symbol}USDT')['price'])
                 )
-                prices += "\n"
+                prices += '\n'
 
-            toast("Your coins: \n", prices)
-            prices = ""
+            toast('Your coins: \n', prices)
+            prices = ''
 
         del prices
         collect()
 
         sleep(5 * 60)
 except Exception as ex:
-    print(f"Erro: {ex}")
+    print(f'Erro: {ex}')

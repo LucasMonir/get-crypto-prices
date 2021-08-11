@@ -19,7 +19,7 @@ A simple python script to get my favorite crypto prices every 5 minutes and disp
 ### Windows:
 * ```pip install win10toast```
 
-### Ubuntu
+### Linux (Tested on Ubuntu)
 * ```pip install notify2```
 
 

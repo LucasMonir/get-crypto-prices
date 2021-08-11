@@ -12,11 +12,9 @@ A simple python script to get my favorite crypto prices every 5 minutes and disp
 * [ ] Add validations and error treatment
 * [ ] Create "Make" file to simplify installing/executing
 * [ ] GUI to select which cryptos to get (replacing the .json)
-
-
+<hr>
 ## Required:
 * ```pip install python-binance```
-* Get your API keys from the binance site
 
 ### Windows:
 * ```pip install win10toast```

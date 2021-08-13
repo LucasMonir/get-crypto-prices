@@ -35,6 +35,6 @@ try:
         del prices
         collect()
 
-        sleep(10 * 60)
+        sleep(5 * 60)
 except Exception as ex:
     print(f'Erro: {ex}')

@@ -8,7 +8,8 @@ A simple python script to get my favorite crypto prices every 5 minutes and disp
 * [x] Add/Fix the toast icon
 * [x] Accept coins as parameter (maybe .json) 
 * [x] Linux support
-* [ ] Dynamic price formatting
+* [x] Dynamic price formatting
+* [ ] Overlay mode (avoids notifications)
 * [ ] Add validations and error treatment
 * [ ] Create "Make" file to simplify installing/executing
 * [ ] GUI to select which cryptos to get (replacing the .json)

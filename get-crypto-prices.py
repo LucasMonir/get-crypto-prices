@@ -12,14 +12,14 @@ try:
     def chunks(L, n):
         return [L[x : x + n] for x in range(0, len(L), n)]
 
-    with open(r'get-crypto-prices/coins.json') as json:
+    with open('coins.json') as json:
         coins = load(json)
         json.close()
         coins2 = chunks(coins, 4)
 
     for index in range(100):
         prices = ''
-        setlocale(LC_ALL, 'en_US')
+        setlocale(LC_ALL, 'en_US.UTF-8')
 
         for coingroup in coins2:
             for coins[0], coins[1] in coingroup:

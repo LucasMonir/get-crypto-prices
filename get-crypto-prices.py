@@ -12,7 +12,7 @@ try:
     def chunks(L, n):
         return [L[x : x + n] for x in range(0, len(L), n)]
 
-    with open('coins.json') as json:
+    with open(r'get-crypto-prices\coins.json') as json:
         coins = load(json)
         json.close()
         coins2 = chunks(coins, 4)

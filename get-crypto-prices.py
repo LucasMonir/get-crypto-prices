@@ -4,6 +4,7 @@ from json import load
 from gc import collect
 from locale import setlocale, LC_ALL, currency
 from toasts import toast
+from pathlib import Path
 
 try:
     client = Client()
@@ -11,8 +12,8 @@ try:
 
     def chunks(L, n):
         return [L[x : x + n] for x in range(0, len(L), n)]
-
-    with open(r'get-crypto-prices\coins.json') as json:
+    
+    with open('get-crypto-prices\coins.json', 'r') as json:
         coins = load(json)
         json.close()
         coins2 = chunks(coins, 4)

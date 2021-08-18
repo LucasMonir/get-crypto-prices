@@ -4,7 +4,6 @@ from json import load
 from gc import collect
 from locale import setlocale, LC_ALL, currency
 from toasts import toast
-from pathlib import Path
 
 try:
     client = Client()

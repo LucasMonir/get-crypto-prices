@@ -37,4 +37,4 @@ try:
 
         sleep(10 * 60)
 except Exception as ex:
-    print(f'Erro: {ex}')
+    print(f'Error: {ex}')
